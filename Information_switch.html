@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,423 +10,358 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Hello!</title>
-	
-	   <!-- Optional JavaScript -->
+
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script type="text/javascript" src="jq.js"> </script>
+    <script src="jq.js">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="edit_switch.js"></script>
+    <script src="edit_switch.js"></script>
 
-	
-  </head>
-  <body>
+</head>
 
- 
- 
-<div class="container">
+<body>
 
+    <div class="container">
 
+        <div class="container">
+            <div>
 
+                <ul class="list-group" id="bd">
+                    <li class="list-group-item">Доп. информация по свитчу</li>
 
-<div  class="container">
-<div>
+                </ul>
+            </div>
 
-<ul class="list-group" id ="bd">
-  <li class="list-group-item">Доп. информация по свитчу</li>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">описание</label>
+                <label class="col-sm-2 col-form-label" id="description">описание</label>
+            </div>
 
-</ul>
-</div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">положение</label>
+                <label class="col-sm-2 col-form-label" id="position">положение</label>
+            </div>
 
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Прошивка</label>
+                <label class="col-sm-2 col-form-label" id="edition">Прошивка</label>
+            </div>
 
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Ревизия</label>
+                <label class="col-sm-2 col-form-label" id="audit">Ревизия</label>
+            </div>
 
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">IP</label>
+                <label class="col-sm-2 col-form-label" id="ip">IP</label>
+            </div>
 
-  <div class="form-group row">
-    <label  class="col-sm-2 col-form-label">описание</label>
-    <label  class="col-sm-2 col-form-label" id="description">описание</label>
-  </div>
-  
-  
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">MAC</label>
+                <label class="col-sm-2 col-form-label" id="mac">MAC</label>
+            </div>
 
-  <div class="form-group row">
-    <label  class="col-sm-2 col-form-label">положение</label>
-    <label  class="col-sm-2 col-form-label" id="position">положение</label>
-  </div>
- 
-  <div class="form-group row">
-    <label  class="col-sm-2 col-form-label">Прошивка</label>
-    <label  class="col-sm-2 col-form-label" id="edition">Прошивка</label>
-  </div>
-  
- 
-  <div class="form-group row">
-    <label  class="col-sm-2 col-form-label">Ревизия</label>
-    <label  class="col-sm-2 col-form-label" id="audit">Ревизия</label>
-  </div>
-  
- 
-  <div class="form-group row">
-    <label  class="col-sm-2 col-form-label">IP</label>
-    <label  class="col-sm-2 col-form-label" id="ip">IP</label>
-  </div>
-  
-  
-  <div class="form-group row">
-    <label  class="col-sm-2 col-form-label">MAC</label>
-    <label  class="col-sm-2 col-form-label" id="mac">MAC</label>
-  </div>
-  
-  
-  <div class="form-group row">
-    <label  class="col-sm-2 col-form-label">hlVlan</label>
-    <label  class="col-sm-2 col-form-label" id="hlvlan">hlVlan</label>
-  </div>
-  
- 
-  <div class="form-group row">
-    <label  class="col-sm-2 col-form-label">lovlan</label>
-    <label  class="col-sm-2 col-form-label" id="lovlan">lovlan</label>
-  </div>
-  
-  
-  
-   
-  <div class="form-group row">
-    <label  class="col-sm-2 col-form-label">адресс</label>
-    <label  class="col-sm-2 col-form-label" id="adress">адресс</label>
-  </div>
-      </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">hlVlan</label>
+                <label class="col-sm-2 col-form-label" id="hlvlan">hlVlan</label>
+            </div>
 
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">lovlan</label>
+                <label class="col-sm-2 col-form-label" id="lovlan">lovlan</label>
+            </div>
 
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">адресс</label>
+                <label class="col-sm-2 col-form-label" id="adress">адресс</label>
+            </div>
+        </div>
 
-<div class="container">
-<button type="button" class="btn btn-primary btn-lg btn-block " id="firstedit" data-toggle="modal" data-target="#myModal">Редактировать свитч</button>
-
-</div >
-
-
-
-<div class="container">
-  <!-- Trigger the modal with a button -->
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="container">
+            <button type="button" class="btn btn-primary btn-lg btn-block " id="firstedit" data-toggle="modal" data-target="#myModal">Редактировать свитч</button>
 
         </div>
-        <div class="modal-body">
-         
-            <div class="form-group">
-              <label ><span class="glyphicon glyphicon-user"></span> описание</label>
-              <input type="text" class="form-control" placeholder="Enter описание" id="description_mod">
-            </div>
-			
-			
-			 <div class="form-group">
-              <label ><span class="glyphicon glyphicon-user"></span> положение</label>
-              <input type="text" class="form-control" id="position_mod" placeholder="Enter положение">
-            </div>
-			
-			
-			 <div class="form-group">
-              <label ><span class="glyphicon glyphicon-user"></span> Прошивка</label>
-              <input type="text" class="form-control" id="edition_mod" placeholder="Enter Прошивка">
-            </div>
-			
-			
-			 <div class="form-group">
-              <label ><span class="glyphicon glyphicon-user"></span> Ревизия</label>
-              <input type="text" class="form-control" id="audit_mod" placeholder="Enter Ревизия">
-            </div>
-			
-			
-			 <div class="form-group">
-              <label ><span class="glyphicon glyphicon-user"></span> IP</label>
-              <input type="text" class="form-control" id="ip_mod" placeholder="Enter IP">
-            </div>
-			
-			
-			 <div class="form-group">
-              <label ><span class="glyphicon glyphicon-user"></span> MAC</label>
-              <input type="text" class="form-control" id="mac_mod" placeholder="Enter MAC">
-            </div>
-			
-			
-			 <div class="form-group">
-              <label ><span class="glyphicon glyphicon-user"></span> hlVlan</label>
-              <input type="text" class="form-control" id="hlvlan_mod" placeholder="Enter hlVlan">
-            </div>
-			
-			 <div class="form-group">
-              <label ><span class="glyphicon glyphicon-user"></span> loVlan</label>
-              <input type="text" class="form-control" id="lovlan_mod" placeholder="Enter loVlan">
-            </div>
-			
-			 <div class="form-group">
-              <label ><span class="glyphicon glyphicon-user"></span> адресс</label>
-              <input type="text" class="form-control" id="adress_mod" placeholder="Enter адресс">
-            </div>
-			
-			
-			
 
-            <button type="button" class="btn btn-default btn-success btn-block" id="editbutton" onClick="openDialogEdit"><span class="glyphicon glyphicon-off"></span> Редактировать свитч </button>
-         
+        <div class="container">
+            <!-- Trigger the modal with a button -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="form-group">
+                                <label><span class="glyphicon glyphicon-user"></span> описание</label>
+                                <input type="text" class="form-control" placeholder="Enter описание" id="description_mod">
+                            </div>
+
+                            <div class="form-group">
+                                <label><span class="glyphicon glyphicon-user"></span> положение</label>
+                                <input type="text" class="form-control" id="position_mod" placeholder="Enter положение">
+                            </div>
+
+                            <div class="form-group">
+                                <label><span class="glyphicon glyphicon-user"></span> Прошивка</label>
+                                <input type="text" class="form-control" id="edition_mod" placeholder="Enter Прошивка">
+                            </div>
+
+                            <div class="form-group">
+                                <label><span class="glyphicon glyphicon-user"></span> Ревизия</label>
+                                <input type="text" class="form-control" id="audit_mod" placeholder="Enter Ревизия">
+                            </div>
+
+                            <div class="form-group">
+                                <label><span class="glyphicon glyphicon-user"></span> IP</label>
+                                <input type="text" class="form-control" id="ip_mod" placeholder="Enter IP">
+                            </div>
+
+                            <div class="form-group">
+                                <label><span class="glyphicon glyphicon-user"></span> MAC</label>
+                                <input type="text" class="form-control" id="mac_mod" placeholder="Enter MAC">
+                            </div>
+
+                            <div class="form-group">
+                                <label><span class="glyphicon glyphicon-user"></span> hlVlan</label>
+                                <input type="text" class="form-control" id="hlvlan_mod" placeholder="Enter hlVlan">
+                            </div>
+
+                            <div class="form-group">
+                                <label><span class="glyphicon glyphicon-user"></span> loVlan</label>
+                                <input type="text" class="form-control" id="lovlan_mod" placeholder="Enter loVlan">
+                            </div>
+
+                            <div class="form-group">
+                                <label><span class="glyphicon glyphicon-user"></span> адресс</label>
+                                <input type="text" class="form-control" id="adress_mod" placeholder="Enter адресс">
+                            </div>
+
+                            <button type="button" class="btn btn-default btn-success btn-block" id="editbutton" onClick="openDialogEdit"><span class="glyphicon glyphicon-off"></span> Редактировать свитч </button>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-         
+
+        <div class="container">
+            <button type="button" class="btn btn-primary btn-lg btn-block">Перезагрузить</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block">Попингуй</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block">МАС-адреса с портов</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block">Расположение свитча</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block">Консоль телнет</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block">Тратата в живот</button>
+
         </div>
-      </div>
+
+        <div class="container">
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">D-Link DES-3200-26</label>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Свободные порти</label>
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="card" style="width: 18rem; display:inline-block">
+                <div class="list-group">
+                    <label class="list-group-item " style="text-align: center; background-color: green"> 1
+                    </label>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Прізвище ім'я</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                    <br>
+                    <label> 100Мбs
+                    </label>
+                    <br>
+                    <button class="btn btn-primary" type="submit">Вкл.</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; display:inline-block">
+                <div class="list-group">
+                    <label class="list-group-item " style="text-align: center; background-color: green"> 2
+                    </label>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Прізвище ім'я</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <br>
+                    <label> 100Мбs
+                    </label>
+                    <br>
+                    <button class="btn btn-primary" type="submit">Вкл.</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; display:inline-block">
+                <div class="list-group">
+                    <label class="list-group-item " style="text-align: center; background-color: green"> 3
+                    </label>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Прізвище ім'я</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <br>
+                    <label> 100Мбs
+                    </label>
+                    <br>
+                    <button class="btn btn-primary" type="submit">Вкл.</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; display:inline-block">
+                <div class="list-group">
+                    <label class="list-group-item " style="text-align: center; background-color: red"> 4
+                    </label>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Прізвище ім'я</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <br>
+                    <label> 0Мбs
+                    </label>
+                    <br>
+                    <button class="btn btn-primary" type="submit">Викл.</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; display:inline-block">
+                <div class="list-group">
+                    <label class="list-group-item " style="text-align: center; background-color: green"> 5
+                    </label>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Прізвище ім'я</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <br>
+                    <label> 100Мбs
+                    </label>
+                    <br>
+                    <button class="btn btn-primary" type="submit">Вкл.</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; display:inline-block">
+                <div class="list-group">
+                    <label class="list-group-item " style="text-align: center; background-color: red"> 6
+                    </label>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Прізвище ім'я</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <br>
+                    <label> 0Мбs
+                    </label>
+                    <br>
+                    <button class="btn btn-primary" type="submit">Викл.</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; display:inline-block">
+                <div class="list-group">
+                    <label class="list-group-item " style="text-align: center; background-color: green"> 7
+                    </label>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Прізвище ім'я</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <br>
+                    <label> 100Мбs
+                    </label>
+                    <br>
+                    <button class="btn btn-primary" type="submit">Вкл.</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; display:inline-block">
+                <div class="list-group">
+                    <label class="list-group-item " style="text-align: center; background-color: green"> 8
+                    </label>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Прізвище ім'я</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <br>
+                    <label> 100Мбs
+                    </label>
+                    <br>
+                    <button class="btn btn-primary" type="submit">Вкл.</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; display:inline-block">
+                <div class="list-group">
+                    <label class="list-group-item " style="text-align: center; background-color: red"> 9
+                    </label>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Прізвище ім'я</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <br>
+                    <label> 0Мбs
+                    </label>
+                    <br>
+                    <button class="btn btn-primary" type="submit">Викл.</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; display:inline-block">
+                <div class="list-group">
+                    <label class="list-group-item " style="text-align: center; background-color: green"> 10
+                    </label>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Прізвище ім'я</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <br>
+                    <label> 100Мбs
+                    </label>
+                    <br>
+                    <button class="btn btn-primary" type="submit">Вкл.</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; display:inline-block">
+                <div class="list-group">
+                    <label class="list-group-item " style="text-align: center; background-color: green"> 11
+                    </label>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Прізвище ім'я</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <br>
+                    <label> 100Мбs
+                    </label>
+                    <br>
+                    <button class="btn btn-primary" type="submit">Вкл.</button>
+                </div>
+            </div>
+
+        </div>
+
     </div>
-  </div> 
-</div>
 
-
-
-
-
-
-
-
-
-
-
-<div class="container" >
-<button type="button" class="btn btn-primary btn-lg btn-block">Перезагрузить</button>
-<button type="button" class="btn btn-primary btn-lg btn-block">Попингуй</button>
-<button type="button" class="btn btn-primary btn-lg btn-block">МАС-адреса с портов</button>
-<button type="button" class="btn btn-primary btn-lg btn-block">Расположение свитча</button>
-<button type="button" class="btn btn-primary btn-lg btn-block">Консоль телнет</button>
-<button type="button" class="btn btn-primary btn-lg btn-block">Тратата в живот</button>
-
-</div>
-
-
-
-<div class="container" >
-
-  <div class="form-group row">
-    <label  class="col-sm-2 col-form-label" align ="center">D-Link DES-3200-26</label>
-  </div>
-  
-
-  <div class="form-group row">
-    <label  class="col-sm-2 col-form-label" align ="center">Свободные порти</label>
- </div>
- 
- </div>
-  
-  
-
-
-  <div class="container" >
-  
-  <div class="card" style="width: 18rem; display:inline-block">
-  <div class="list-group">
-  <label class="list-group-item " style="text-align: center; background-color: green"> 1
-  </label>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Прізвище ім'я</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-   <br>
-   <label> 100Мбs
-  </label>
-     <br>
-   <button class="btn btn-primary" type="submit">Вкл.</button>
-  </div>
-</div>
-
-
-  <div class="card" style="width: 18rem; display:inline-block">
-  <div class="list-group">
-  <label class="list-group-item " style="text-align: center; background-color: green"> 2
-  </label>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Прізвище ім'я</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-     <br>
-   <label> 100Мбs
-  </label>
-     <br>
-   <button class="btn btn-primary" type="submit">Вкл.</button>
-  </div>
-</div>
-
-
-  <div class="card" style="width: 18rem; display:inline-block">
-  <div class="list-group">
-  <label class="list-group-item " style="text-align: center; background-color: green"> 3
-  </label>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Прізвище ім'я</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <br>
-   <label> 100Мбs
-  </label>
-     <br>
-   <button class="btn btn-primary" type="submit">Вкл.</button>
-  </div>
-</div>
-
-
-  <div class="card" style="width: 18rem; display:inline-block">
-  <div class="list-group">
-  <label class="list-group-item " style="text-align: center; background-color: red"> 4
-  </label>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Прізвище ім'я</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-     <br>
-   <label> 0Мбs
-  </label>
-     <br>
-   <button class="btn btn-primary" type="submit">Викл.</button>
-  </div>
-</div>
-
-
-  <div class="card" style="width: 18rem; display:inline-block">
-  <div class="list-group">
-  <label class="list-group-item " style="text-align: center; background-color: green"> 5
-  </label>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Прізвище ім'я</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-   <br>
-   <label> 100Мбs
-  </label>
-     <br>
-   <button class="btn btn-primary" type="submit">Вкл.</button>
-  </div>
-</div>
-
-
-  <div class="card" style="width: 18rem; display:inline-block">
-  <div class="list-group">
-  <label class="list-group-item " style="text-align: center; background-color: red"> 6
-  </label>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Прізвище ім'я</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-     <br>
-   <label> 0Мбs
-  </label>
-     <br>
-   <button class="btn btn-primary" type="submit">Викл.</button>
-  </div>
-</div>
-
-
-  <div class="card" style="width: 18rem; display:inline-block">
-  <div class="list-group">
-  <label class="list-group-item " style="text-align: center; background-color: green"> 7
-  </label>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Прізвище ім'я</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-     <br>
-   <label> 100Мбs
-  </label>
-     <br>
-   <button class="btn btn-primary" type="submit">Вкл.</button>
-  </div>
-</div>
-
-
-  <div class="card" style="width: 18rem; display:inline-block">
-  <div class="list-group">
-  <label class="list-group-item " style="text-align: center; background-color: green"> 8
-  </label>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Прізвище ім'я</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-     <br>
-   <label> 100Мбs
-  </label>
-     <br>
-   <button class="btn btn-primary" type="submit">Вкл.</button>
-  </div>
-</div>
-
-
-  <div class="card" style="width: 18rem; display:inline-block">
-  <div class="list-group">
-  <label class="list-group-item " style="text-align: center; background-color: red"> 9
-  </label>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Прізвище ім'я</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-     <br>
-   <label> 0Мбs
-  </label>
-     <br>
-   <button class="btn btn-primary" type="submit">Викл.</button>
-  </div>
-</div>
-
-
-  <div class="card" style="width: 18rem; display:inline-block">
-  <div class="list-group">
-  <label class="list-group-item " style="text-align: center; background-color: green"> 10
-  </label>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Прізвище ім'я</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-     <br>
-   <label> 100Мбs
-  </label>
-     <br>
-   <button class="btn btn-primary" type="submit">Вкл.</button>
-  </div>
-</div>
-
-  <div class="card" style="width: 18rem; display:inline-block">
-  <div class="list-group">
-  <label class="list-group-item " style="text-align: center; background-color: green"> 11
-  </label>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Прізвище ім'я</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-     <br>
-   <label> 100Мбs
-  </label>
-     <br>
-   <button class="btn btn-primary" type="submit">Вкл.</button>
-  </div>
-</div>
-
-</div>
-	
-	
-	
-
-	
-	
-   
-
-</div>
-
-
-
-
- </body>
+</body>
 
 </html>
